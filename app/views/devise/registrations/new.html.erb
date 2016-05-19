@@ -13,7 +13,7 @@
   <div class="form-group">
     <%= f.label :senha %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(<%= @minimum_password_length %> minimo de caracteres.)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
   </div>
@@ -28,6 +28,6 @@
     <%= f.submit "Cadastrar", class:'btn btn-primary' %>
   </div>
   <% end %>
-  <div class="panel-footer"><%= render "devise/shared/links" %></div>
-
+  <br/>
+  <div class="panel-footer"></div>
 </div>
