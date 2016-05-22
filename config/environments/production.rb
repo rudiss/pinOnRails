@@ -3,12 +3,12 @@ Rails.application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-    :bucket => ENV['rudis'],
-    :access_key_id => ENV['AKIAIGRV43G55AV7N4TQ'],
-    :secret_access_key => ENV['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']
+    :bucket => ENV['AWS_BUCKET'],
+    :access_key_id => ENV['AWS_ACESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
-
+end
 config.action_mailer.default_url_options = { host: 'pinterested-lighting' }
   # Code is not reloaded between requests.
   config.cache_classes = true
