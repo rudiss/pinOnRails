@@ -8,7 +8,7 @@ Rails.application.configure do
     :secret_access_key => ENV['+xwbH406eMRc8NiiS+WfTgvk5mHfctcCrcgBTZSs']
     }
   }
-end
+
 config.action_mailer.default_url_options = { host: 'pinterested-lighting' }
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -85,4 +85,4 @@ config.action_mailer.default_url_options = { host: 'pinterested-lighting' }
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+end
