@@ -7,7 +7,7 @@ class PinsController < ApplicationController
   
   
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order("created_at Desc").paginate(:page => params[:page], :per_page => 11)
   end
 
   # GET /pins/1
